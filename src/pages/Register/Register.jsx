@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
-import { json } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 function Register() {
-    const [input,setInput]=useState({
+    const [input,setInput]=useState([{
         name:"",
         email:"",
         password:""
-    })
+    }])
     const navigate=useNavigate()
     const handleSubmit=(e)=>{
         e.preventDefault()
